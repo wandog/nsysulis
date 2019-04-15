@@ -1,0 +1,18 @@
+var Appendzero=function(arg){
+    if(arg<10)
+        return '0'+arg;
+    else
+        return arg;
+};
+var presentTime=function(){
+    var date=new Date();
+    var Y=date.getFullYear();
+    var M=date.getMonth();
+    var d=date.getDate();
+    var m=date.getMinutes();
+    var h=date.getHours();
+    var s=date.getSeconds();
+    
+    return 'TIME:\n'+Appendzero(Y)+" "+Appendzero(M)+" "+Appendzero(d)+"  "+Appendzero(h)+':'+Appendzero(m)+':'+Appendzero(s);
+};
+
